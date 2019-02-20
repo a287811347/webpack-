@@ -41,20 +41,11 @@ module.exports = Dust;   // 最后暴露 Dust 类
 ```
 使用 `extract-text-webpack-plugin` 将 CSS 文件分离出来，构建后目录单独有一个 `style.css`
 
-2. 使用 `clean-webpack-plugin`， 每次构建之前删掉 `dist` 目录，避免上一次构建的影响
+使用 `clean-webpack-plugin`， 每次构建之前删掉 `dist` 目录，避免上一次构建的影响
 
-3. 使用 `webpack-dev-server` 可以开启本地服务器，保存代码后页面自动刷新。
+使用 `webpack-dev-server` 可以开启本地服务器，保存代码后页面自动刷新。
 
-4. `webpack` 和 `webpack-dev-server` 只需装到项目本地，不需要全局安装，使用 [`npm scripts`](https://doc.webpack-china.org/guides/getting-started/#npm-npm-scripts-) 运行构建任务，比如`npm run build` 运行 `webpack` 命令, `npm run server` 可以开启本地服务器。
-
-5. 将打包后 `dist` 目录代码直接放到 Gitlab Pages, 提交 Merge Request 的时候在评论贴上可以直接访问的链接。
-
-只会三大语言而不懂工程化已经不能算一个合格的前端开发了，工程化当然也是面试官必问的问题。
-
-我知道大家在上手工程化的时候很困难，但你想一想，不正是因为困难才值得你去学习和掌握么。
-
-耐心，细致，多琢磨下工程化的目的、工具和涉及的目录结构，难不住你的。
-
+`webpack` 和 `webpack-dev-server` 只需装到项目本地，不需要全局安装，使用 [`npm scripts`](https://doc.webpack-china.org/guides/getting-started/#npm-npm-scripts-) 运行构建任务，比如`npm run build` 运行 `webpack` 命令, `npm run server` 可以开启本地服务器。
 
 ## 链接
 * [项目源码地址](https://github.com/luckykun/tinyHeart)(经修改)
